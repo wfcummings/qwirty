@@ -1,0 +1,13 @@
+.side-nav {
+  margin: 4px;
+}
+.side-nav a {
+  display: flex;
+  border: solid 1.5px rgb(218, 218, 218);
+  padding: 1ch;
+  background-color: rgb(68, 68, 219);
+}
+
+.side-nav a:hover {
+  background-color: rgb(3, 3, 80);
+}

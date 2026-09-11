@@ -2,13 +2,15 @@ header {
   display: flex;
   flex-direction: column;
 }
-.topnav-left {
+.topnav-left,
+.topnav-right {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   background: rgb(68, 68, 219);
   height: 2.5rem;
   align-items: center;
+
   a {
     border-right: solid 1.5px white;
     padding-right: 0.5em;
@@ -17,13 +19,7 @@ header {
     text-decoration: underline;
   }
 }
-.topnav-right {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  background: rgb(68, 68, 219);
-  align-items: center;
-}
+
 button img {
   width: 2rem;
   height: 2rem;
@@ -61,5 +57,11 @@ button img {
 @media (width<700px) {
   .topnav-right {
     display: none;
+  }
+}
+
+@media (width>700px) {
+  header {
+    display: flex;
   }
 }

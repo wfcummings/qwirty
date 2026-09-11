@@ -1,0 +1,33 @@
+li {
+  list-style: none;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-rows: 25;
+  gap: 1rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.p-name {
+  background-color: rgb(68, 68, 219);
+  color: white;
+  padding: 1ch;
+  margin: 0;
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(68, 68, 219);
+  padding: 2ch;
+  color: white;
+}
